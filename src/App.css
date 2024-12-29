@@ -1,0 +1,209 @@
+/* General App Styles */
+body {
+  background-image: url('/images/stock_market.jpg'); /* Adjust the path to your image location */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* App Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Spinning logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgba(40, 44, 52, 0.8); /* Slight transparency to overlay content */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+/* Custom styles for the main content */
+.container {
+  margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Alert Styling */
+.alert {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Profile logo and username at top right */
+.profile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.profile-logo .logo {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #343a40;
+  padding: 10px;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff;
+}
+
+/* Login and Signup Page Styles */
+.login-signup-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.login-signup-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.login-signup-container .form-group {
+  margin-bottom: 15px;
+}
+
+.login-signup-container .form-control {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.login-signup-container .btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+/* Profile Page Styles */
+.profile-page-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.profile-page-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-page-container .form-group {
+  margin-bottom: 15px;
+}
+
+.profile-page-container .form-control {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.profile-page-container .btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+/* Admin and User Page Styles */
+.admin-user-page {
+  padding: 20px;
+}
+
+.admin-user-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-user-page .btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+/* Additional Responsive Styling */
+@media (max-width: 768px) {
+  .profile-logo {
+    top: 10px;
+    right: 10px;
+  }
+
+  .login-signup-container {
+    width: 90%;
+  }
+
+  .profile-page-container {
+    width: 90%;
+  }
+
+  .admin-user-page {
+    padding: 10px;
+  }
+}
